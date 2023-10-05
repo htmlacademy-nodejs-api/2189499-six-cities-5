@@ -1,4 +1,3 @@
-
 import { Command } from "./commands/command.interface.js";
 
 type CommandCollection = Record<string, Command>
@@ -9,7 +8,7 @@ export class CLIApplication{
   public registerCommands(commandList: Command[]): void{
     commandList.forEach((command) => {
       if (Object.hasOwn(this.commands, command.getName())){
-        throw new Error()
+        throw new Error(`Command ${command.getName} is already declarated`);
       }
 
     this.commands[command.getName()] = command;
