@@ -5,7 +5,7 @@ import { User } from "./users.type.js"
 export type Rent = {
   name: string,
   description: string,
-  date: string,
+  date: Date,
   town: string,
   mainImage: string,
   images: string[],
