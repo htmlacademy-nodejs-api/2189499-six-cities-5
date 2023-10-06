@@ -19,7 +19,7 @@ export class TSVFileReader implements FileReader {
     }
 
     return this.rawData
-      .split('/n')
+      .split('\n')
       .filter((row) => row.trim().length > 0)
       .map((line) => line.split('\t'))
       .map(([name, description, date, town, mainImage, images, isPremium, isFavorite, rating, houseType, roomCount, guestCount, price, comfort, author, commentCount, latitude, longitude]) => ({
