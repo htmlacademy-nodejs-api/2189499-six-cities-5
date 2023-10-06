@@ -1,6 +1,4 @@
-import { HouseType } from "./house.type.js"
-import { Comfort } from "./comfort.type.js"
-import { User } from "./users.type.js"
+import { HouseType } from './house.type.js';
 
 export type Rent = {
   name: string,
@@ -16,8 +14,8 @@ export type Rent = {
   roomCount: number,
   guestCount: number,
   price: number,
-  comfort: Comfort[],
-  author: User,
+  comfort: string[],
+  author: string,
   commentCount: number,
   latitude: number;
   longitude: number;
