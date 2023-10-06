@@ -20,7 +20,6 @@ export class CLIApplication {
     });
   }
 
-
   public getCommand(commandName: string): Command {
     return this.commands[commandName] ?? this.getDefaultCommand();
   }

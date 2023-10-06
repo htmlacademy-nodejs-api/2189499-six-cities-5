@@ -6,7 +6,7 @@ function bootstrap() {
   const cliApplication = new CLIApplication();
   cliApplication.registerCommands([
     new HelpCommand(),
-    new VersionCommand(), 
+    new VersionCommand(),
     new ImportCommand(),
   ]);
 

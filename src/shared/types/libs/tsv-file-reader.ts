@@ -1,6 +1,6 @@
 import { readFileSync } from 'node:fs';
 import { FileReader } from './file-reader.interface.js';
-import { Rent, HouseType} from '../../types/index.js'
+import { Rent, HouseType} from '../../types/index.js';
 
 export class TSVFileReader implements FileReader {
   private rawData = '';
@@ -24,7 +24,7 @@ export class TSVFileReader implements FileReader {
       .map((line) => line.split('\t'))
       .map(([name, description, date, town, mainImage, images, isPremium, isFavorite, rating, houseType, roomCount, guestCount, price, comfort, author, commentCount, latitude, longitude]) => ({
         name,
-        description, 
+        description,
         date: new Date(date),
         town,
         mainImage,
@@ -41,6 +41,6 @@ export class TSVFileReader implements FileReader {
         commentCount: +commentCount,
         latitude: +latitude,
         longitude: +longitude,
-      }))
+      }));
   }
 }
