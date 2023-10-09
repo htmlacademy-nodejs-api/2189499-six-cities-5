@@ -1,0 +1,85 @@
+{
+  "api": {
+    "name": [
+      "GrangPudapesht",
+      "MarcoPolo"
+    ],
+    "description": [
+      "Lorem ipsum dolor sit amet, consectetuer",
+      "Lorem ipsum dolor sit amet, consectetuer"
+    ],
+    "date": [
+      "2023-05-01T08:45:40",
+      "2023-04-04T22:50:40"
+    ],
+    "town": [
+      "Paris",
+      "Germany"
+    ],
+    "mainImage": [
+      "hotel-1-main.jpg",
+      "hotel-2-main.jpg"
+    ],
+    "images": [
+      "hotel-01.jpg",
+      "hotel-02.jpg",
+      "hotel-03.jpg",
+      "hotel-04.jpg",
+      "hotel-05.jpg",
+      "hotel-05.jpg"
+    ],
+    "isPremium": [
+      "true",
+      "false"
+    ],
+    "isFavorite": [
+      "true",
+      "false"
+    ],
+    "rating": [
+      "5",
+      "1"
+    ],
+    "houseType": [
+      "apartment",
+      "room"
+    ],
+    "roomCount": [
+      "8",
+      "2"
+    ],
+    "guestCount": [
+      "10",
+      "3"
+    ],
+    "price": [
+      "100000",
+      "100"
+    ],
+    "comfort": [
+      "Breakfast",
+      "Air conditioning",
+      "Laptop friendly workspace",
+      "Baby seat",
+      "Washer",
+      "Towels",
+      "Fridge"
+    ],
+    "author": [
+      "Lev Tolstoy",
+      "Anna KArenina"
+    ],
+    "commentCount": [
+      "3",
+      "2"
+    ],
+    "latitude": [
+      "48.85661",
+      "48.85661"
+    ],
+    "longitude": [
+      "2.351499",
+      "2.351499"
+    ]
+  }
+}
