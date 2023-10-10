@@ -45,7 +45,7 @@ export class TSVOfferGenerator implements OfferGenerator {
     const date = dayjs().subtract(generateRandomValue(FIRST_WEEK_DAY, LAST_WEEK_DAY), 'day').toISOString();
 
     const [firstName, lastName] = author.split(' ');
-    
+
   return [
     name,
     description,
@@ -63,6 +63,8 @@ export class TSVOfferGenerator implements OfferGenerator {
     comfort,
     author,
     commentCount,
+    firstName,
+    lastName,
   ].join('\t')  
   }
 }
