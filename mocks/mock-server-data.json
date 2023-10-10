@@ -8,13 +8,10 @@
       "Lorem ipsum dolor sit amet, consectetuer",
       "Lorem ipsum dolor sit amet, consectetuer"
     ],
-    "date": [
-      "2023-05-01T08:45:40",
-      "2023-04-04T22:50:40"
-    ],
-    "town": [
+    "towns": [
       "Paris",
-      "Germany"
+      "Germany",
+      "China"
     ],
     "mainImage": [
       "hotel-1-main.jpg",
@@ -44,18 +41,6 @@
       "apartment",
       "room"
     ],
-    "roomCount": [
-      "8",
-      "2"
-    ],
-    "guestCount": [
-      "10",
-      "3"
-    ],
-    "price": [
-      "100000",
-      "100"
-    ],
     "comfort": [
       "Breakfast",
       "Air conditioning",
@@ -68,18 +53,6 @@
     "author": [
       "Lev Tolstoy",
       "Anna KArenina"
-    ],
-    "commentCount": [
-      "3",
-      "2"
-    ],
-    "latitude": [
-      "48.85661",
-      "48.85661"
-    ],
-    "longitude": [
-      "2.351499",
-      "2.351499"
     ]
   }
 }
