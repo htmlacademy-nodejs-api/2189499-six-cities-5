@@ -1,10 +1,10 @@
 import { HouseType } from "./house.type.js";
-
+// import { City } from "./city.enum.js";
 export type MockServerData = {
   name: string[],
   description: string[],
   date: Date[],
-  town: string[],
+  city: string[],
   mainImage: string[],
   images: string[][],
   isPremium: boolean[],

@@ -2,6 +2,7 @@
 import { MockServerData } from "../../mock-server-data.type.js";
 import { getRandomItem, generateRandomValue } from "../../helpers/common.js";
 import { OfferGenerator } from "./offer-generator.interface.js";
+import { City } from "../../index.js";
 import dayjs from "dayjs";
 
 const MAX_RATING = 5;
@@ -29,7 +30,7 @@ export class TSVOfferGenerator implements OfferGenerator {
   public generate(): string {
     const name = getRandomItem<string>(this.mockData.name);
     const description = getRandomItem<string>(this.mockData.description);
-    // const town = getRandomItem<string>(this.mockData.town);
+    const cities = getRandomItem([City.Paris, City.Amsterdam, City.Brussels, City.Cologne]);
     const mainImage = getRandomItem<string>(this.mockData.mainImage);
     const images = getRandomItem<string[]>(this.mockData.images);
     const isPremium = getRandomItem<boolean>(this.mockData.isPremium);
@@ -51,7 +52,7 @@ export class TSVOfferGenerator implements OfferGenerator {
     name,
     description,
     date,
-    // town,
+    cities,
     mainImage,
     images,
     isPremium,

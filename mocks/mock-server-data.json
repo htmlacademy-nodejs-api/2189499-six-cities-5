@@ -8,10 +8,9 @@
       "Lorem ipsum dolor sit amet, consectetuer",
       "Lorem ipsum dolor sit amet, consectetuer"
     ],
-    "towns": [
-      "Paris",
-      "Germany",
-      "China"
+    "city": [
+      "Parissdf",
+      "Cologne"
     ],
     "mainImage": [
       "hotel-1-main.jpg",
