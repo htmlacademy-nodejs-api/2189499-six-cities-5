@@ -1,6 +1,6 @@
 import got from "got";
 import { Command } from "./command.interface.js";
-import { MockServerData, TSVFileReader } from "../../shared/types/index.js";
+import { MockServerData } from "../../shared/types/index.js";
 import { TSVOfferGenerator } from "../../shared/types/libs/offer-generator.interface.ts/tsv-offer-generator.js";
 import { appendFile } from "node:fs/promises";
 

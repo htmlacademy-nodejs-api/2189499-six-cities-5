@@ -18,12 +18,31 @@
       "hotel-2-main.jpg"
     ],
     "images": [
-      "hotel-01.jpg",
-      "hotel-02.jpg",
-      "hotel-03.jpg",
-      "hotel-04.jpg",
-      "hotel-05.jpg",
-      "hotel-05.jpg"
+      [
+        "beerloga01.jpg",
+        "beerloga02.jpg",
+        "beerloga03.jpg"
+      ],
+      [
+        "castle01.jpg",
+        "castle02.jpg",
+        "castle03.jpg",
+        "castle10.jpg",
+        "castle06.jpg",
+        "castle08.jpg"
+      ],
+      [
+        "capsule-1.jpg",
+        "capsule-2.jpg",
+        "capsule-3.jpg"
+      ],
+      [
+        "horse-house.jpg"
+      ],
+      [
+        "a-house_1.jpg",
+        "a-house_2.jpg"
+      ]
     ],
     "isPremium": [
       "true",

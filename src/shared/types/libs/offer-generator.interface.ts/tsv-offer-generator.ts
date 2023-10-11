@@ -1,5 +1,6 @@
-import { getRandomItem, generateRandomValue, getRandomItems } from "../../helpers/common.js";
+// import { getRandomItem, generateRandomValue, getRandomItems } from "../../helpers/common.js";
 import { MockServerData } from "../../mock-server-data.type.js";
+import { getRandomItem, generateRandomValue } from "../../helpers/common.js";
 import { OfferGenerator } from "./offer-generator.interface.js";
 import dayjs from "dayjs";
 
@@ -28,29 +29,29 @@ export class TSVOfferGenerator implements OfferGenerator {
   public generate(): string {
     const name = getRandomItem<string>(this.mockData.name);
     const description = getRandomItem<string>(this.mockData.description);
-    const town = getRandomItem<string>(this.mockData.town);
+    // const town = getRandomItem<string>(this.mockData.town);
     const mainImage = getRandomItem<string>(this.mockData.mainImage);
-    const images = getRandomItem<string>(this.mockData.images);
+    const images = getRandomItem<string[]>(this.mockData.images);
     const isPremium = getRandomItem<boolean>(this.mockData.isPremium);
     const isFavorite = getRandomItem<boolean>(this.mockData.isFavorite);
-    const rating = generateRandomValue(MIN_RATING, MAX_RATING).toString();
+    const rating = generateRandomValue(MIN_RATING, MAX_RATING, 1).toString();
     const houseType = getRandomItem(this.mockData.houseType);
     const roomCount = generateRandomValue(MIN_ROOM_COUNT, MAX_ROOM_COUNT).toString();
     const guestCount = generateRandomValue(MIN_GUEST_COUNT, MAX_GUEST_COUNT).toString();
     const price = generateRandomValue(MIN_PRICE, MAX_PRICE).toString();
-    const comfort = getRandomItems(this.mockData.comfort);
+    const comfort = getRandomItem<string>(this.mockData.comfort);
     const author = getRandomItem<string>(this.mockData.author);
     const commentCount = generateRandomValue(MIN_COMMENT, MAX_COMMENT).toString();
   
     const date = dayjs().subtract(generateRandomValue(FIRST_WEEK_DAY, LAST_WEEK_DAY), 'day').toISOString();
 
-    const [firstName, lastName] = author.split(' ');
+    // const [firstName, lastName] = author.split(' ');
 
   return [
     name,
     description,
     date,
-    town,
+    // town,
     mainImage,
     images,
     isPremium,
@@ -63,8 +64,8 @@ export class TSVOfferGenerator implements OfferGenerator {
     comfort,
     author,
     commentCount,
-    firstName,
-    lastName,
+    // firstName,
+    // lastName,
   ].join('\t')  
   }
 }

@@ -6,7 +6,7 @@ export type MockServerData = {
   date: Date[],
   town: string[],
   mainImage: string[],
-  images: string[],
+  images: string[][],
   isPremium: boolean[],
   isFavorite: boolean[],
   rating: number[],
