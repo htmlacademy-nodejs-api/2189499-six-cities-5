@@ -1,9 +1,8 @@
-// import { getRandomItem, generateRandomValue, getRandomItems } from "../../helpers/common.js";
-import { MockServerData } from "../../mock-server-data.type.js";
-import { getRandomItem, generateRandomValue } from "../../helpers/common.js";
-import { OfferGenerator } from "./offer-generator.interface.js";
-import { City } from "../../index.js";
-import dayjs from "dayjs";
+import { MockServerData } from '../../mock-server-data.type.js';
+import { getRandomItem, generateRandomValue } from '../../helpers/common.js';
+import { OfferGenerator } from './offer-generator.interface.js';
+import { City } from '../../index.js';
+import dayjs from 'dayjs';
 
 const MAX_RATING = 5;
 const MIN_RATING = 1;
@@ -20,7 +19,7 @@ const MIN_GUEST_COUNT = 1;
 const MIN_COMMENT = 1;
 const MAX_COMMENT = 5;
 
-const FIRST_WEEK_DAY =1;
+const FIRST_WEEK_DAY = 1;
 const LAST_WEEK_DAY = 7;
 
 export class TSVOfferGenerator implements OfferGenerator {
@@ -43,30 +42,30 @@ export class TSVOfferGenerator implements OfferGenerator {
     const comfort = getRandomItem<string>(this.mockData.comfort);
     const author = getRandomItem<string>(this.mockData.author);
     const commentCount = generateRandomValue(MIN_COMMENT, MAX_COMMENT).toString();
-  
+
     const date = dayjs().subtract(generateRandomValue(FIRST_WEEK_DAY, LAST_WEEK_DAY), 'day').toISOString();
 
     // const [firstName, lastName] = author.split(' ');
 
-  return [
-    name,
-    description,
-    date,
-    cities,
-    mainImage,
-    images,
-    isPremium,
-    isFavorite,
-    rating,
-    houseType,
-    roomCount,
-    guestCount,
-    price,
-    comfort,
-    author,
-    commentCount,
+    return [
+      name,
+      description,
+      date,
+      cities,
+      mainImage,
+      images,
+      isPremium,
+      isFavorite,
+      rating,
+      houseType,
+      roomCount,
+      guestCount,
+      price,
+      comfort,
+      author,
+      commentCount,
     // firstName,
     // lastName,
-  ].join('\t')  
+    ].join('\t');
   }
 }

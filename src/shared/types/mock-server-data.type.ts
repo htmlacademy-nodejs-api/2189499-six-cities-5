@@ -1,5 +1,5 @@
-import { HouseType } from "./house.type.js";
-// import { City } from "./city.enum.js";
+import { HouseType } from './house.type.js';
+
 export type MockServerData = {
   name: string[],
   description: string[],
