@@ -2,7 +2,8 @@ import got from 'got';
 import { Command } from './command.interface.js';
 import { MockServerData } from '../../shared/types/index.js';
 import { TSVOfferGenerator } from '../../shared/types/libs/offer-generator.interface.ts/tsv-offer-generator.js';
-import { appendFile } from 'node:fs/promises';
+import { getErrorMessage } from '../../shared/types/helpers/common.js';
+import { TSVFileWriter } from '../../shared/types/libs/file-writer/index.js';
 
 export class GenerateCommand implements Command {
 
@@ -22,13 +23,10 @@ export class GenerateCommand implements Command {
 
   public async write(filepath: string, offerCount: number){
     const tsvOfferGenerator = new TSVOfferGenerator(this.initialData);
+    const tsvFileWriter = new TSVFileWriter(filepath);
 
     for (let i = 0; i < offerCount; i++) {
-      await appendFile(
-        filepath,
-        `${tsvOfferGenerator.generate()}\n`,
-        {encoding: 'utf-8'}
-      );
+      await tsvFileWriter.write(tsvOfferGenerator.generate());
     }
   }
 
@@ -42,10 +40,7 @@ export class GenerateCommand implements Command {
       console.info(`File ${filepath} was created!`);
     } catch (error: unknown) {
       console.log('Can\'t generate data');
-
-      if(error instanceof Error) {
-        console.error(error.message);
-      }
+      console.error(getErrorMessage(error));
     }
   }
 }
