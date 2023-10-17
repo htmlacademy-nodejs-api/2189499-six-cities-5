@@ -1,0 +1,76 @@
+{
+  "api": {
+    "name": [
+      "GrangPudapesht",
+      "MarcoPolo"
+    ],
+    "description": [
+      "Lorem ipsum dolor sit amet, consectetuer",
+      "Lorem ipsum dolor sit amet, consectetuer"
+    ],
+    "city": [
+      "Parissdf",
+      "Cologne"
+    ],
+    "mainImage": [
+      "hotel-1-main.jpg",
+      "hotel-2-main.jpg"
+    ],
+    "images": [
+      [
+        "beerloga01.jpg",
+        "beerloga02.jpg",
+        "beerloga03.jpg"
+      ],
+      [
+        "castle01.jpg",
+        "castle02.jpg",
+        "castle03.jpg",
+        "castle10.jpg",
+        "castle06.jpg",
+        "castle08.jpg"
+      ],
+      [
+        "capsule-1.jpg",
+        "capsule-2.jpg",
+        "capsule-3.jpg"
+      ],
+      [
+        "horse-house.jpg"
+      ],
+      [
+        "a-house_1.jpg",
+        "a-house_2.jpg"
+      ]
+    ],
+    "isPremium": [
+      "true",
+      "false"
+    ],
+    "isFavorite": [
+      "true",
+      "false"
+    ],
+    "rating": [
+      "5",
+      "1"
+    ],
+    "houseType": [
+      "apartment",
+      "room"
+    ],
+    "comfort": [
+      "Breakfast",
+      "Air conditioning",
+      "Laptop friendly workspace",
+      "Baby seat",
+      "Washer",
+      "Towels",
+      "Fridge"
+    ],
+    "author": [
+      "Lev Tolstoy",
+      "Anna KArenina"
+    ]
+  }
+}
